@@ -137,7 +137,6 @@ let total = rcc({
         }
         let px = 0
         if (this.state.display === 'Session') {
-            // let sessionLen = this.state.sessionLen
             let percent = 1 - this.state.leftLen / this.state.sessionLen
             px = (-8 + percent * 300 ) + 'px'
         }
@@ -145,7 +144,6 @@ let total = rcc({
             let percent = 1 - this.state.leftLen / this.state.breakLen
             px = (-8 + percent * 300 ) + 'px'                
         }
-        console.log('px : ', px)
         return rce('div', {'className': 'container'},
             rce('div', {'className': 'fcc'}, 'FreeCodeCamp'),
             rce('div', {'className': 'sets pure-g'}, 
