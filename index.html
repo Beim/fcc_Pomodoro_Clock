@@ -35,10 +35,12 @@
                 font-size: 5em;
                 font-style: italic;
                 margin: 20px auto;
+                cursor: default;
             }
             .sets{
                 z-index:30;
                 margin: 0 auto;
+                margin-bottom: 30px;
             }
             .set{
                 height: 70px;
@@ -51,6 +53,26 @@
             }
             .set div{
                 margin: 5px auto;
+                width: 141px;
+            }
+            .adjust{
+                display: flex;
+                justify-content: space-around;
+            }
+            .adjust div{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                font-size: 1.5em;
+            }
+            .adjustDec{
+                cursor: pointer;
+            }
+            .adjustNum{
+                cursor: default;
+            }
+            .adjustInc{
+                cursor: pointer;
             }
             .sessions{
                 margin: 0px auto;
@@ -66,7 +88,9 @@
                 left: 8px;
                 top: 8px;
                 border-radius: 50%;
-                background-color: lawngreen;
+                /*background-color: lawngreen;*/
+                /*background-color: lightcoral;*/
+                /*color: lightcoral*/
             }
             .sessionBlock{
                 z-index: 20;
@@ -75,7 +99,8 @@
                 width: 300px;
                 left: 8px;
                 /*top: -5px;*/
-                bottom: 80px;
+                /*bottom: 292px;*/
+                bottom: 0px;  /*-8 ~ 292*/
                 background: #333333;
             }
             .sessionClock{
@@ -87,6 +112,8 @@
                 position: absolute;
                 display: flex;
                 flex-direction: column;
+                cursor: pointer;
+                
             }
             .sessionBreak{
                 margin: 80px auto 40px auto;
